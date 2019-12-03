@@ -1,0 +1,85 @@
+section.puff-container {
+    width: 80%;
+    margin: 50px auto 0;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: flex; 
+    flex-flow: row wrap;
+    
+}
+.puff-container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+    justify-content: center;
+    width: 100%;
+}
+.puff-container h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+p.ingress {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+.puff-container > .puff {
+    width: 33.333%;
+    min-width: 200px;
+    margin: 0; 
+    padding: 10px;
+    order: 2;
+    flex-flow: row wrap;
+    /*float: left; */
+}
+.puff-container a {
+    text-decoration: none;
+    color: #333;
+}
+.puff-container img {
+    display: block;
+    max-width: 100%;
+}
+@media (min-width: 768px) and (max-width:991.98px)  {
+    .puff-container h1{
+        font-size: 1.5rem;
+    }
+    .puff-container h2{
+        font-size: 1rem;
+    }
+    .puff-container p {
+        font-size: 0.8rem;
+    }
+}
+@media (min-width: 578px) and (max-width: 767.98px) {
+    }
+    .puff-container > .puff {
+        width: 50%;
+    }
+    .puff-container h1{
+        font-size: 1.5rem;
+    }
+    .puff-container h2{
+        font-size: 1rem;
+    }
+    .puff-container p {
+        font-size: 0.8rem;
+    }
+
+@media (max-width: 575.98px) {
+    .puff-container > .puff {
+        width: 100%;
+    }
+    .puff-container h1{
+        font-size: 1.5rem;
+    }
+    .puff-container h2{
+        font-size: 1rem;
+    }
+    .puff-container p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+
+.header {
+    /*height: 95vh; */
+    background-image: linear-gradient(to right bottom, 
+        rgba(157,213,111, 0.7),
+        rgba(40,164,180, 0.7)),
+        url(../images/hero.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+  
+}
+.desktop nav {
+    background-image: linear-gradient(to right, #333, #777);
+    font-size: 1.5rem;
+    position: sticky;
+    top: 0;    
+    display: flex;
+    width: 100%;
+}
+.desktop ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.desktop li {
+    /*float: left;*/
+    flex:0 1 auto;
+    justify-content: start;
+}
+.desktop li .righty {
+    margin-left: auto;
+   /* float: right; */
+   justify-content: right;
+ 
+}
+.righty {
+    justify-content: right;
+}
+
+.desktop li a {
+    display: block;
+    color: rgb(157,213,111);
+    text-decoration: none;
+    padding: 14px 16px;
+ 
+}
+
+.desktop li a:hover, li a.active {
+    background-color: rgb(157,213,111);
+    color: #333;
+}
+.mobile {
+    display: none;
+}
+@media (max-width:767.98px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: contents;
+    }
+    .mobile button {
+        background-image: linear-gradient(to right, #333, #777);
+        font-size: 1.2rem;
+        width: 100%;
+        border: none;
+        padding: 10px;
+        color: greenyellow;
+
+    }
+    nav.menu {
+        display: none;
+    }
+    button + nav.menu:active, button:focus + nav.menu{
+        display: contents;
+    }
+    nav.menu ul {
+        background-image: linear-gradient(to right, #333, #777);
+        font-size: 1.5rem;
+        padding: 10px;
+        list-style: none;
+    }
+    nav.menu li a{
+        color: greenyellow;
+        text-decoration: none;
+    }
+    nav.menu li a:hover, li a.active {
+        background-color: rgb(157,213,111);
+        color: #333;
+    }
+}
